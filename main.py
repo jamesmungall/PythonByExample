@@ -78,3 +78,11 @@
 # print(line_of_text[startNum:endNum])
 
 # Challenge 024
+# firstname: str = input("enter your firstname: ")
+# if len(firstname) < 5:
+#     surname: str = input("enter your surname: ")
+#     output = firstname+surname
+#     print(output.upper())
+# else:
+#     print(firstname.lower())
+
