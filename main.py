@@ -4,6 +4,7 @@
 # print("your name is ", firstname, surname)
 import math
 import random
+import turtle
 
 # Challenge 003
 # print("What do you call a bear with no teeth?\nA gummy bear!")
@@ -188,15 +189,35 @@ import random
 #     total += num
 # print(total)
 
-# Challenge 046
-comp_num = random.randint(1, 100)
-print(comp_num)
-guess = int(input("Guess the number: "))
-while guess != comp_num:
-    if guess < comp_num:
-        print("Your guess is too low.")
-    else:
-        print("Your guess is too high.")
-    guess = int(input("Try again: "))
-print("You've got it!")
+# Challenge 049
+# comp_num = random.randint(1, 100)
+# print(comp_num)
+# guess = int(input("Guess the number: "))
+# while guess != comp_num:
+#     if guess < comp_num:
+#         print("Your guess is too low.")
+#     else:
+#         print("Your guess is too high.")
+#     guess = int(input("Try again: "))
+# print("You've got it!")
+
+# Challenge 52
+# print(random.randrange(1, 100))
+
+# Challenge 53
+# print(random.choice(["apple", "banana", "orange"]))
+
+# Challenge 54
+# heads_or_tails = random.choice(["h", "t"])
+# guess = input("Guess heads or tails (h or t): ")
+# if heads_or_tails == guess:
+#     print("You win")
+# else:
+#     print("You lose")
+# print("The computer selected", heads_or_tails)
+
+# Challenge 60
+
+turtle.forward(100)
+
 
