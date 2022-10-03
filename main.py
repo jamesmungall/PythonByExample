@@ -189,14 +189,14 @@ import random
 # print(total)
 
 # Challenge 046
-compnum = random.randint(1, 100)
-print(compnum)
+comp_num = random.randint(1, 100)
+print(comp_num)
 guess = int(input("Guess the number: "))
-while(guess != compnum):
-    if(guess < compnum):
+while guess != comp_num:
+    if guess < comp_num:
         print("Your guess is too low.")
-    elif(guess < compnum):
-        print("Your guess is too low.")
-    guess = int(input("Guess the number: "))
+    else:
+        print("Your guess is too high.")
+    guess = int(input("Try again: "))
 print("You've got it!")
 
