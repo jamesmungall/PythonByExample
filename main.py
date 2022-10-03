@@ -3,6 +3,7 @@
 # surname = input("Enter your second name: ")
 # print("your name is ", firstname, surname)
 import math
+import random
 
 # Challenge 003
 # print("What do you call a bear with no teeth?\nA gummy bear!")
@@ -180,9 +181,22 @@ import math
 # else:
 #     print("I don't understand")
 
-# Challenge 043
+# Challenge 045
 # total = 0
 # while(total<50):
 #     num = int(input("input a number: "))
 #     total += num
 # print(total)
+
+# Challenge 046
+compnum = random.randint(1, 100)
+print(compnum)
+guess = int(input("Guess the number: "))
+while(guess != compnum):
+    if(guess < compnum):
+        print("Your guess is too low.")
+    elif(guess < compnum):
+        print("Your guess is too low.")
+    guess = int(input("Guess the number: "))
+print("You've got it!")
+
