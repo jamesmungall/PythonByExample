@@ -44,3 +44,14 @@
 #     print("Correct")
 # else:
 #     print("Too high")
+
+# Challenge 019
+# num1 = int(input("Enter 1, 2 or 3: "))
+# if num1 == 1:
+#     print("thank you")
+# elif num1 == 2:
+#     print("well done")
+# elif num1 == 3:
+#     print("correct")
+# else:
+#     print("error")
