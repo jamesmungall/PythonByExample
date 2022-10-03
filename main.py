@@ -158,7 +158,7 @@ import math
 # for i in range(num, 49, -1):
 #     print(i)
 
-# Challenge 041
+# Challenge 042
 # total = 0
 # for i in range(0, 5):
 #     num = int(input("number: "))
@@ -167,3 +167,15 @@ import math
 #         total = total + num
 # print(total)
 
+# Challenge 043
+# up_or_down = int(input("Up (1) or down(0)? "))
+# if up_or_down == 1:
+#     top_number = int(input("Input top number: "))
+#     for i in range(1, top_number+1):
+#         print(i)
+# elif up_or_down == 0:
+#     bottom_number = int(input("choose a number less than 20: "))
+#     for i in range(20, bottom_number-1, -1):
+#         print(i)
+# else:
+#     print("I don't understand")
