@@ -131,3 +131,39 @@ import math
 #     base = int(input("base: "))
 #     height = int(input("height: "))
 #     print("area is: ", height * base * 0.5)
+
+# Challenge 035
+# name = input("enter your name: ")
+# for i in range(1, 3):
+#     print(i, name)
+
+# Challenge 036
+# name = input("enter your name: ")
+# num = int(input("number of repeats: "))
+# for i in range(1, num+1):
+#     print(i, name)
+
+# Challenge 037
+# name = input("enter your name: ")
+# for i in range(0, len(name)):
+#     print(name[i])
+
+# Challenge 039
+# num = int(input("enter a number: "))
+# for i in range(1, 11):
+#     print(num * i)
+
+# Challenge 040
+# num = int(input("enter a number above 50: "))
+# for i in range(num, 49, -1):
+#     print(i)
+
+# Challenge 041
+# total = 0
+# for i in range(0, 5):
+#     num = int(input("number: "))
+#     include = int(input("include this number? (1 = Yes or 0 = No): "))
+#     if include == 1:
+#         total = total + num
+# print(total)
+
