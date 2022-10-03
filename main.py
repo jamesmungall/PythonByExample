@@ -17,4 +17,9 @@
 # num3 = int(input("Enter 3rd number "))
 # print("(", num1, "+", num2, ")*", num3, "=", (num1+num2)*num3)
 
+# Challenge 008
+bill = int(input("What is the price of the bill?"))
+numberOfPeople = int(input("How many people are there?"))
+print("Each person needs to pay", bill, "/", numberOfPeople, "=", bill/numberOfPeople)
+
 
