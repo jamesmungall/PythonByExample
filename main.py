@@ -18,8 +18,14 @@
 # print("(", num1, "+", num2, ")*", num3, "=", (num1+num2)*num3)
 
 # Challenge 008
-bill = int(input("What is the price of the bill?"))
-numberOfPeople = int(input("How many people are there?"))
-print("Each person needs to pay", bill, "/", numberOfPeople, "=", bill/numberOfPeople)
+# bill = int(input("What is the price of the bill?"))
+# numberOfPeople = int(input("How many people are there?"))
+# print("Each person needs to pay", bill, "/", numberOfPeople, "=", bill/numberOfPeople)
+
+# Challenge 011
+# num1 = int(input("Enter a number over 100: "))
+# num2 = int(input("Enter a number less than 10: "))
+# wholeNumberDivision = num1//num2
+# print(num2, "fits into", num1, wholeNumberDivision, "times, with a remainder of", num1 - (wholeNumberDivision*num2))
 
 
