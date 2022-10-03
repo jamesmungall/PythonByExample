@@ -120,3 +120,14 @@ import math
 # num1 = float(input("Enter radius: "))
 # output = math.pi * num1**2
 # print(round(output, 2))
+
+# Challenge 034
+# print("1) Square\n2) Triangle")
+# num = int(input("Choose a number: "))
+# if num == 1:
+#     side_length = int(input("Sidelength: "))
+#     print("area is:", side_length**2)
+# else:
+#     base = int(input("base: "))
+#     height = int(input("height: "))
+#     print("area is: ", height * base * 0.5)
