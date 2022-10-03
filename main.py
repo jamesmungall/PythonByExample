@@ -28,4 +28,19 @@
 # wholeNumberDivision = num1//num2
 # print(num2, "fits into", num1, wholeNumberDivision, "times, with a remainder of", num1 - (wholeNumberDivision*num2))
 
+# Challenge 012
+# num1 = int(input("Enter 1st number: "))
+# num2 = int(input("Enter 2nd number: "))
+# if num1 > num2:
+#     print(num2, num1)
+# else:
+#     print(num1, num2)
 
+# Challenge 018
+# num1 = int(input("Enter a number: "))
+# if num1 < 10:
+#     print("Too low")
+# elif 10 <= num1 <= 20:
+#     print("Correct")
+# else:
+#     print("Too high")
