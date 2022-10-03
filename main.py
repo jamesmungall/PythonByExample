@@ -77,7 +77,7 @@
 # endNum = int(input("end number"))
 # print(line_of_text[startNum:endNum])
 
-# Challenge 024
+# Challenge 025
 # firstname: str = input("enter your firstname: ")
 # if len(firstname) < 5:
 #     surname: str = input("enter your surname: ")
@@ -85,4 +85,20 @@
 #     print(output.upper())
 # else:
 #     print(firstname.lower())
+
+# Challenge 026
+# textInput: str = input("input a word: ")
+# textInput = textInput.lower()
+# first_letter = textInput[0]
+# if first_letter == "a" or first_letter == "e" or first_letter == "i" or first_letter == "o" or first_letter == "u":
+#     is_first_a_vowel = True
+# else:
+#     is_first_a_vowel = False
+# if is_first_a_vowel:
+#     print(textInput+"way")
+# else:
+#     start = 1
+#     end = len(textInput)
+#     new_word = textInput[start:end]
+#     print(new_word+first_letter+"ay")
 
