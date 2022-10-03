@@ -179,3 +179,10 @@ import math
 #         print(i)
 # else:
 #     print("I don't understand")
+
+# Challenge 043
+# total = 0
+# while(total<50):
+#     num = int(input("input a number: "))
+#     total += num
+# print(total)
