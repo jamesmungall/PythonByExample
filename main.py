@@ -2,6 +2,7 @@
 # firstname = input("Enter your first name: ")
 # surname = input("Enter your second name: ")
 # print("your name is ", firstname, surname)
+import math
 
 # Challenge 003
 # print("What do you call a bear with no teeth?\nA gummy bear!")
@@ -26,7 +27,7 @@
 # num1 = int(input("Enter a number over 100: "))
 # num2 = int(input("Enter a number less than 10: "))
 # wholeNumberDivision = num1//num2
-# print(num2, "fits into", num1, wholeNumberDivision, "times, with a remainder of", num1 - (wholeNumberDivision*num2))
+# print(num2, "fits into", num1, wholeNumberDivision, "times, with a remainder of", num1 % num2)
 
 # Challenge 012
 # num1 = int(input("Enter 1st number: "))
@@ -102,3 +103,20 @@
 #     new_word = textInput[start:end]
 #     print(new_word+first_letter+"ay")
 
+# Challenge 028
+# num1 = float(input("Enter a decimal: "))
+# print(round(num1, 2))
+
+# Challenge 029
+# num1 = float(input("Enter a number greater than 500: "))
+# output = math.sqrt(num1)
+# output = round(output, 2)
+# print(output)
+
+# Challenge 030
+# print(round(math.pi, 5))
+
+# Challenge 031
+# num1 = float(input("Enter radius: "))
+# output = math.pi * num1**2
+# print(round(output, 2))
