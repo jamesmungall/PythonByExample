@@ -55,3 +55,26 @@
 #     print("correct")
 # else:
 #     print("error")
+
+# Challenge 020
+# name: str = input("enter your name: ")
+# print("your name has", len(name), "letters")
+
+# Challenge 021
+# firstname: str = input("enter your firstname: ")
+# surname: str = input("enter your surname: ")
+# print(firstname + surname, len(firstname + surname))
+
+
+# Challenge 022
+# firstname: str = input("enter your firstname: ")
+# surname: str = input("enter your surname: ")
+# print(firstname.title(), surname.title())
+
+# Challenge 023
+# line_of_text = input("input a line of text: ")
+# startNum = int(input("start number"))
+# endNum = int(input("end number"))
+# print(line_of_text[startNum:endNum])
+
+# Challenge 024
