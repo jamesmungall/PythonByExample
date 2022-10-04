@@ -340,5 +340,22 @@ import turtle
 # end = int(input("end: "))
 # print(poem[start:end])
 
-# Challenge 84
-name = input("type in your name.")
+# Challenge 85
+# name = input("type in your name: ")
+# name_upper = name.upper()
+# number_of_vowels = 0
+# for i in range(len(name_upper)):
+#     if name_upper[i] in ["A", "E", "I", "O", "U"]:
+#         number_of_vowels += 1
+# print("number of vowels is", number_of_vowels)
+
+# Challenge 86
+# pwd1 = input("type a password: ")
+# pwd2 = input("retype password: ")
+# if pwd1 == pwd2:
+#     print("the passwords match")
+# else:
+#     print("the passwords do not match")
+#     if pwd1.upper() == pwd2.upper():
+#         print("they must be in the same case")
+
