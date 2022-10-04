@@ -432,10 +432,13 @@ import numpy as numpy
 
 # Primes sieve
 primes = []
-for i in range(2, 30):
-    primes.append(i)
+for n in range(2, 30):
+    primes.append(n)
 max_prime = round(math.sqrt(len(primes)))
-for i in range(max_prime):
+i = 0
+while primes[i] <= max_prime:
+
+#for i in range(max_prime):
     prime = primes[i]
     len_primes = len(primes)
     j = i
@@ -445,6 +448,6 @@ for i in range(max_prime):
         if j < len_primes:
             if primes[j] % prime == 0:
                 primes.remove(primes[j])
-
+    i = i + 1
 print(primes)
 
