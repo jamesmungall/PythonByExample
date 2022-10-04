@@ -277,3 +277,13 @@ import turtle
 #     print(number_index)
 # else:
 #     print("not found")
+
+# Challenge 076
+invites = ["andrew", "bob", "carly"]
+print(invites)
+add_new = input("Do you want to add anyone else? (y / n): ")
+while add_new == 'y':
+    new_invite = input("New person: ")
+    invites.append(new_invite)
+    add_new = input("Do you want to add anyone else? (y / n): ")
+print(invites)
