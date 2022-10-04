@@ -412,3 +412,39 @@ import numpy as numpy
 #         count += 1
 # print("There were", count, "occurrences of the number", user_input)
 
+# Challenge 092
+# user_numbers = array('i', [])
+# for i in range(3):
+#     user_numbers.append(int(input("type a number:")))
+# print(user_numbers)
+# random_numbers = array('i', [])
+# for i in range(5):
+#     random_numbers.append(random.randrange(10))
+# print(random_numbers)
+# joined_array = array('i', [])
+# for x in user_numbers:
+#     joined_array.append(x)
+# for y in random_numbers:
+#     joined_array.append(y)
+# joined_array = sorted(joined_array)
+# for item in joined_array:
+#     print(item)
+
+# Primes sieve
+primes = []
+for i in range(2, 30):
+    primes.append(i)
+max_prime = round(math.sqrt(len(primes)))
+for i in range(max_prime):
+    prime = primes[i]
+    len_primes = len(primes)
+    j = i
+    while j < len_primes:
+        j = j + 1
+        len_primes = len(primes)
+        if j < len_primes:
+            if primes[j] % prime == 0:
+                primes.remove(primes[j])
+
+print(primes)
+
