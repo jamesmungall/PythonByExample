@@ -217,7 +217,34 @@ import turtle
 # print("The computer selected", heads_or_tails)
 
 # Challenge 60
+# Cannot get turtle to work in PyCharm
 
-turtle.forward(100)
+# Challenge 069
+# countries = ("UK", "Fr", "Nd", "Deu", "Es")
+# print(countries)
 
+# Challenge 070
+# countries = ("UK", "Fr", "Nd", "Deu", "Es")
+# print(countries)
+# choice = int(input("Choose a country (1-5): "))
+# print(countries[choice-1])
 
+# Challenge 071
+# sports = ["golf", "tennis"]
+# new_sport = input("Type a sport: ")
+# sports.append(new_sport)
+# sports.append("squash")
+# print(sports)
+
+# Challenge 072
+# subjects = ["French", "English", "Maths"]
+# print(subjects)
+# choice = input("Type a subject to delete: ")
+# subjects.remove(choice)
+# print(subjects)
+
+subjects = ["French", "English", "Maths"]
+print(subjects)
+choice = int(input("Choose a subject to delete(1, 2 or 3): "))
+subjects.pop(choice-1)
+print(subjects)
