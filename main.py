@@ -243,8 +243,20 @@ import turtle
 # subjects.remove(choice)
 # print(subjects)
 
-subjects = ["French", "English", "Maths"]
-print(subjects)
-choice = int(input("Choose a subject to delete(1, 2 or 3): "))
-subjects.pop(choice-1)
-print(subjects)
+# subjects = ["French", "English", "Maths"]
+# print(subjects)
+# choice = int(input("Choose a subject to delete(1, 2 or 3): "))
+# subjects.pop(choice-1)
+# print(subjects)
+
+# Challenge 073
+# foods = {1: "bread", 2: "milk", 3: "honey"}
+# print(foods)
+# new_food = input("Add a new food: ")
+# foods.update({4: new_food})
+# print(foods)
+# choice = int(input("choose an element to remove (1, 2, 3 or 4): "))
+# foods.pop(choice)
+# print(foods)
+
+# Challenge 074
