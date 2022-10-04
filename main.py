@@ -5,6 +5,9 @@
 import math
 import random
 import turtle
+from array import array
+
+import numpy as numpy
 
 # Challenge 003
 # print("What do you call a bear with no teeth?\nA gummy bear!")
@@ -363,4 +366,13 @@ import turtle
 # user_input = input("type a word: ")
 # for i in range(len(user_input)-1, 0-1, -1):
 #     print(user_input[i])
+
+# Challenge 088
+# numbers = array('i', [])
+# for i in range(5):
+#     numbers.append(int(input("type a number:")))
+# print(numbers)
+# sorted_numbers = sorted(numbers, reverse=True)
+# sorted_numbers_array = numpy.array(sorted_numbers)
+# print(sorted_numbers_array)
 
