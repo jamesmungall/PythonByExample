@@ -278,12 +278,28 @@ import turtle
 # else:
 #     print("not found")
 
-# Challenge 076
-invites = ["andrew", "bob", "carly"]
-print(invites)
-add_new = input("Do you want to add anyone else? (y / n): ")
-while add_new == 'y':
-    new_invite = input("New person: ")
-    invites.append(new_invite)
-    add_new = input("Do you want to add anyone else? (y / n): ")
-print(invites)
+# Challenge 076, 077
+# invites = ["andrew", "bob", "carly"]
+# print(invites)
+# add_new = input("Do you want to add anyone else? (y / n): ")
+# while add_new == 'y':
+#     new_invite = input("New person: ")
+#     invites.append(new_invite)
+#     add_new = input("Do you want to add anyone else? (y / n): ")
+# print(invites)
+# name_choice = input("Type a name from the list: ")
+# print("Index of", name_choice, "is", invites.index(name_choice))
+# remove_invite = input("Do you want to remove them? (y / n): ")
+# if remove_invite == 'y':
+#     invites.remove(name_choice)
+# print(invites)
+
+# Challenge 078
+tv_shows = ["a", "b", "c", "d"]
+for i in range(len(tv_shows)):
+    print(tv_shows[i])
+new_show = input("Type in a new show: ")
+question_text = "Insert position. Type 0 for beginning of list and ", len(tv_shows), " for end of list: "
+position = int(input(question_text))
+tv_shows.insert(position, new_show)
+print(tv_shows)
