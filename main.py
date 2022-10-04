@@ -295,11 +295,50 @@ import turtle
 # print(invites)
 
 # Challenge 078
-tv_shows = ["a", "b", "c", "d"]
-for i in range(len(tv_shows)):
-    print(tv_shows[i])
-new_show = input("Type in a new show: ")
-question_text = "Insert position. Type 0 for beginning of list and ", len(tv_shows), " for end of list: "
-position = int(input(question_text))
-tv_shows.insert(position, new_show)
-print(tv_shows)
+# tv_shows = ["a", "b", "c", "d"]
+# for i in range(len(tv_shows)):
+#     print(tv_shows[i])
+# new_show = input("Type in a new show: ")
+# question_text = "Insert position. Type 0 for beginning of list and ", len(tv_shows), " for end of list: "
+# position = int(input(question_text))
+# tv_shows.insert(position, new_show)
+# print(tv_shows)
+
+# Challenge 079
+# nums = []
+# for i in range(3):
+#     new_number = int(input("input a number: "))
+#     nums.append(new_number)
+#     print(nums)
+# delete_last = input("Do you want to delete last number? (y/n): ")
+# if delete_last == 'y':
+#     nums.remove(new_number)
+# print(nums)
+
+# Challenge 080
+# firstname = input("Type first name: ")
+# print("length is: ", len(firstname))
+# surname = input("Type surname: ")
+# print("length is: ", len(surname))
+# whole_name = firstname+" " + surname
+# print(whole_name, len(whole_name))
+
+# Challenge 081
+# subject = input("type a subject: ")
+# for letter in subject:
+#     print(letter, end="-")
+
+# Challenge 082
+# poem = "Twas brillig"
+# print(poem)
+# print("There are ", len(poem), "letters in this string.")
+# print("Indices run from 0 to", len(poem) - 1, ".")
+# print("However, to get the last value you have to end at", len(poem))
+# print("because when you give python a range in the format a:b, ")
+# print("it runs from a to b-1")
+# start = int(input("start: "))
+# end = int(input("end: "))
+# print(poem[start:end])
+
+# Challenge 84
+name = input("type in your name.")
