@@ -359,3 +359,8 @@ import turtle
 #     if pwd1.upper() == pwd2.upper():
 #         print("they must be in the same case")
 
+# Challenge 87
+# user_input = input("type a word: ")
+# for i in range(len(user_input)-1, 0-1, -1):
+#     print(user_input[i])
+
