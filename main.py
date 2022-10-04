@@ -376,3 +376,24 @@ import numpy as numpy
 # sorted_numbers_array = numpy.array(sorted_numbers)
 # print(sorted_numbers_array)
 
+# Challenge 089
+# numbers = array('i', [])
+# for i in range(5):
+#      numbers.append(random.randrange(10))
+# for x in numbers:
+#     print(x)
+
+# Challenge 090
+# numbers = array('i', [])
+# count = 0
+# while count < 5:
+#     user_input = int(input("Type a number between 10 and 20: "))
+#     if 10 <= user_input <= 20:
+#         numbers.append(user_input)
+#         count += 1
+#     else:
+#         print("Your number was outside the range.")
+# print("thank you")
+# for i in range(len(numbers)):
+#     print(numbers[i])
+
