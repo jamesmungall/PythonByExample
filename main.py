@@ -260,3 +260,20 @@ import turtle
 # print(foods)
 
 # Challenge 074
+# colours = ["red", "green", "blue", "yellow", "cyan", "magenta", "black", "white", "brown", "grey"]
+# start = int(input("start (1 - 5): "))
+# end = int(input("start (6 - 10): "))
+# print(colours[start-1:end])
+
+# Challenge 075
+# numbers = []
+# for i in range(1, 3+1):
+#     new_number = random.randrange(100, 1000)
+#     print(new_number)
+#     numbers.append(new_number)
+# choice = int(input("choose a number: "))
+# if choice in numbers:
+#     number_index = numbers.index(choice)
+#     print(number_index)
+# else:
+#     print("not found")
