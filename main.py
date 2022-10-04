@@ -397,3 +397,18 @@ import numpy as numpy
 # for i in range(len(numbers)):
 #     print(numbers[i])
 
+# Challenge 091
+# numbers = array('i', [])
+# repeated_number = random.randrange(10)
+# for i in range(2):
+#     numbers.append(repeated_number)
+# for i in range(3):
+#     numbers.append(random.randrange(10))
+# print(numbers)
+# user_input = int(input("Enter one of the numbers: "))
+# count = 0
+# for i in range(len(numbers)):
+#     if numbers[i] == user_input:
+#         count += 1
+# print("There were", count, "occurrences of the number", user_input)
+
