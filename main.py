@@ -9,6 +9,7 @@ from array import array
 
 import numpy as numpy
 
+
 # Challenge 003
 # print("What do you call a bear with no teeth?\nA gummy bear!")
 
@@ -431,23 +432,61 @@ import numpy as numpy
 #     print(item)
 
 # Primes sieve
-primes = []
-for n in range(2, 30):
-    primes.append(n)
-max_prime = round(math.sqrt(len(primes)))
-i = 0
-while primes[i] <= max_prime:
-
-#for i in range(max_prime):
-    prime = primes[i]
-    len_primes = len(primes)
-    j = i
-    while j < len_primes:
-        j = j + 1
+# primes = []
+# for n in range(2, 1000):
+#     primes.append(n)
+# max_prime = round(math.sqrt(len(primes)))
+# i = 0
+# while primes[i] <= max_prime:
+#     prime = primes[i]
+#     len_primes = len(primes)
+#     j = i
+#     while j < len_primes:
+#         j = j + 1
+#         len_primes = len(primes)
+#         if j < len_primes:
+#             if primes[j] % prime == 0:
+#                 primes.remove(primes[j])
+#     i = i + 1
+# print(primes)
+# print(len(primes))
+def get_primes(max_value):
+    primes = []
+    for n in range(2, max_value + 1):
+        primes.append(n)
+    max_prime = round(math.sqrt(len(primes)))
+    i = 0
+    while primes[i] <= max_prime:
+        prime = primes[i]
         len_primes = len(primes)
-        if j < len_primes:
-            if primes[j] % prime == 0:
-                primes.remove(primes[j])
-    i = i + 1
-print(primes)
+        j = i
+        while j < len_primes:
+            j = j + 1
+            len_primes = len(primes)
+            if j < len_primes:
+                if primes[j] % prime == 0:
+                    primes.remove(primes[j])
+        i = i + 1
+    return primes
 
+
+# print(get_primes(30))
+# is_prime = 2 in get_primes(30)
+# print(is_prime)
+
+# result = []
+# a = 1
+# b = 41
+# for n in range(50):
+#     result.append(n ** 2 + a*n + b)
+#
+# print(result)
+# primes = get_primes(result[len(result) - 1])
+# print(primes)
+# result_boolean = []
+# for value in result:
+#     if value in primes:
+#         result_boolean.append(True)
+#     else:
+#         result_boolean.append(False)
+# print(result_boolean)
