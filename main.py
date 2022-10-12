@@ -490,3 +490,81 @@ def get_primes(max_value):
 #     else:
 #         result_boolean.append(False)
 # print(result_boolean)
+
+
+# Challenge 124
+
+# from tkinter import *
+#
+#
+# def Call():
+#     msg = Label(window, text="You pressed the button")
+#     msg.place(x=30, y=50)
+#     button["bg"] = "blue"
+#     button["fg"] = "white"
+#     output_box["bg"] = "red"
+#     output_box["fg"] = "green"
+#     name = entry_box.get()
+#     output_box["text"] = "hello " + name
+#
+#
+# window = Tk()
+# window.geometry('400x220')
+#
+# button = Button(text="go", command=Call)
+# button.place(x=30, y=20, width=120, height=25)
+# entry_box = Entry(text="Type your name")
+# entry_box.place(x=130, y=20, width=120, height=25)
+# output_box = Message(text="output box")
+# output_box.place(x=230, y=20, width=120, height=25)
+# window.mainloop()
+
+# Challenge 125
+
+# from tkinter import *
+#
+# window = Tk()
+#
+#
+# def RollDice():
+#     value = random.randint(1, 6)
+#     msg = Label(window, text=value)
+#     msg.place(x=30, y=50)
+#
+#
+# button = Button(text="roll", command=RollDice)
+# button.place(x=30, y=20, width=120, height=25)
+# window.mainloop()
+
+# Challenge 126
+#
+# from tkinter import *
+#
+#
+# def j_compute():
+#     new_value = int(input_box.get())
+#     current_total = int(output_box["text"])
+#     new_total = new_value + current_total
+#     output_box["text"] = new_total
+#
+#
+# def j_reset():
+#     output_box["text"] = 0
+#
+#
+# window = Tk()
+# label = Label(text="Enter a number")
+# label.place(x=10, y=10)
+# input_box = Entry(text="Enter a number")
+# input_box.place(x=10, y=50)
+# button = Button(text="Click when done", command=j_compute)
+# button.place(x=10, y=80)
+# output_box = Message(text=0)
+# output_box.place(x=10, y=130)
+#
+# button = Button(text="Reset", command=j_reset)
+# button.place(x=10, y=180)
+#
+# window.mainloop()
+
+
