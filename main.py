@@ -2,6 +2,8 @@
 # firstname = input("Enter your first name: ")
 # surname = input("Enter your second name: ")
 # print("your name is ", firstname, surname)
+
+
 import math
 import random
 import turtle
@@ -567,4 +569,26 @@ def get_primes(max_value):
 #
 # window.mainloop()
 
+# Challenge 127
+# from tkinter import Tk, Label, Entry, Button
+#
+# j_list = ['a','b','c']
+#
+# def j_add():
+#     j_list.append(input_box.get())
+#     print(j_list)
+#     my_list = Label(text=j_list)
+#     my_list.place(x=10, y=100)
+#     return
+#
+#
+# window = Tk()
+# message = Label(text="Enter a name")
+# message.place(x=10,y=10)
+# input_box = Entry(text = "type here")
+# input_box.place(x=10, y = 40)
+# button = Button(text="Click when done", command=j_add)
+# button.place(x=10, y=70)
+#
+# window.mainloop()
 
