@@ -45,36 +45,76 @@
 # file.close()
 
 # Challenge 109
-def j_menu():
-    print("1) Create a new file")
-    print("2) Display the file")
-    print("3) Add a new item to the file")
-    user_input = input("Make a selection 1, 2 or 3: ")
-    return user_input
+# def j_menu():
+#     print("1) Create a new file")
+#     print("2) Display the file")
+#     print("3) Add a new item to the file")
+#     user_input = input("Make a selection 1, 2 or 3: ")
+#     return user_input
+#
+#
+# selection = j_menu() # note that selection is a string
+# valid_selections = [1, 2, 3]
+# # This will throw an error if the selection is not in the valid_selections list
+# index = valid_selections.index(int(selection))
+#
+# print("Thank you. You choose option " + str(selection))
+# if selection == "1":
+#     school_subject = input("Enter a subject: ")
+#     file = open("subject.txt", "w")
+#     file.write(school_subject+"\n")
+#     file.close()
+#
+# if selection == "2":
+#     file = open("subject.txt", "r")
+#     print(file.read())
+#     file.close()
+#
+# if selection == "3":
+#     new_subject = input("Enter a new subject: ")
+#     file = open("subject.txt", "a")
+#     file.write(new_subject+"\n")
+#     file.close()
+#     file = open("subject.txt", "r")
+#     print(file.read())
+#     file.close()
 
 
-selection = j_menu() # note that selection is a string
-valid_selections = [1, 2, 3]
-# This will throw an error if the selection is not in the valid_selections list
-index = valid_selections.index(int(selection))
+# file = open("starts.csv","a")
+# name = input("enter name: ")
+# age = input("Enter age: ")
+# start = input("Enter start: ")
+# newRecord = name + ","+age+","+start+"\n"
+# file.write(str(newRecord))
+# file.close()
+import csv
 
-print("Thank you. You choose option " + str(selection))
-if selection == "1":
-    school_subject = input("Enter a subject: ")
-    file = open("subject.txt", "w")
-    file.write(school_subject+"\n")
-    file.close()
+# file = open("starts.csv","r")
+# search = input("Enter the data you are searching for: ")
+# reader = csv.reader(file)
+# for row in file:
+#     if search in str(row):
+#         print(row)
 
-if selection == "2":
-    file = open("subject.txt", "r")
-    print(file.read())
-    file.close()
+# file = list(csv.reader(open("starts.csv")))
+# tmp = []
+# for row in file:
+#     tmp.append(row)
+#
+# file = open("newStarts.csv", "w")
+# x = 0
+# for row in tmp:
+#     newRec = tmp[x][0] + "," + tmp[x][1] + "," + tmp[x][2] + "\n"
+#     file.write(newRec)
+#     x = x + 1
+# file.close()
 
-if selection == "3":
-    new_subject = input("Enter a new subject: ")
-    file = open("subject.txt", "a")
-    file.write(new_subject+"\n")
-    file.close()
-    file = open("subject.txt", "r")
-    print(file.read())
-    file.close()
+# Challenge 111
+file = open("books.csv","w")
+file.write("Book, Author, Year Released\n")
+file.write("To Kill a Mockingbird, Harper Lee, 1960\n")
+file.write("A Brief History of Time, Stephen Hawking, 1988\n")
+file.write("The Great Gatsby, F. Scott Fitzgerald, 1922\n")
+file.write("The Man who mistook his wife for a hat, Oliver Sacks, 1985\n")
+file.write("Pride and Prejudice, Jane Austen, 1813\n")
+file.close()
