@@ -109,12 +109,47 @@ import csv
 #     x = x + 1
 # file.close()
 
-# Challenge 111
-file = open("books.csv","w")
-file.write("Book, Author, Year Released\n")
-file.write("To Kill a Mockingbird, Harper Lee, 1960\n")
-file.write("A Brief History of Time, Stephen Hawking, 1988\n")
-file.write("The Great Gatsby, F. Scott Fitzgerald, 1922\n")
-file.write("The Man who mistook his wife for a hat, Oliver Sacks, 1985\n")
-file.write("Pride and Prejudice, Jane Austen, 1813\n")
+# Challenge 111, 112
+# file = open("books.csv","w")
+# file.write("Book, Author, Year Released\n")
+# file.write("To Kill a Mockingbird, Harper Lee, 1960\n")
+# file.write("A Brief History of Time, Stephen Hawking, 1988\n")
+# file.write("The Great Gatsby, F. Scott Fitzgerald, 1922\n")
+# file.write("The Man who mistook his wife for a hat, Oliver Sacks, 1985\n")
+# file.write("Pride and Prejudice, Jane Austen, 1813\n")
+# file.close()
+#
+# book = input("Enter book: ")
+# author = input("Enter author: ")
+# year = input("Enter year: ")
+# file = open("books.csv", "a")
+# newRecord = book + "," + author + "," + year + "\n"
+# file.write(newRecord)
+# file.close()
+#
+# books_csv_file = open("books.csv", "r")
+# print(books_csv_file.read())
+
+# Challenge 113
+number_of_new_records = input("How many records do you want to add?(0 - 10) ")
+valid_selections = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# This will throw an error if the selection is not in the valid_selections list
+index = valid_selections.index(int(number_of_new_records))
+file = open("books.csv", "a")
+for i in range(int(number_of_new_records)):
+    book = input("Enter book: ")
+    author = input("Enter author: ")
+    year = input("Enter year: ")
+    newRecord = book + "," + author + "," + year + "\n"
+    file.write(newRecord)
 file.close()
+
+authorSearch = input("Enter the author you are searching for: ")
+with open("books.csv", mode="r") as books_csv_file:
+    reader = csv.reader(books_csv_file)
+    for row in reader:
+        if authorSearch.capitalize() in str(row):
+            print(row)
+
+
+
