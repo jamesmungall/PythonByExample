@@ -130,26 +130,35 @@ import csv
 # books_csv_file = open("books.csv", "r")
 # print(books_csv_file.read())
 
-# Challenge 113
-number_of_new_records = input("How many records do you want to add?(0 - 10) ")
-valid_selections = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# This will throw an error if the selection is not in the valid_selections list
-index = valid_selections.index(int(number_of_new_records))
-file = open("books.csv", "a")
-for i in range(int(number_of_new_records)):
-    book = input("Enter book: ")
-    author = input("Enter author: ")
-    year = input("Enter year: ")
-    newRecord = book + "," + author + "," + year + "\n"
-    file.write(newRecord)
-file.close()
+# Challenge 113, 114
+# number_of_new_records = input("How many records do you want to add?(0 - 10) ")
+# valid_selections = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# # This will throw an error if the selection is not in the valid_selections list
+# index = valid_selections.index(int(number_of_new_records))
+# file = open("books.csv", "a")
+# for i in range(int(number_of_new_records)):
+#     book = input("Enter book: ")
+#     author = input("Enter author: ")
+#     year = input("Enter year: ")
+#     newRecord = book + "," + author + "," + year + "\n"
+#     file.write(newRecord)
+# file.close()
+# Challenge 113 (cont)
+# authorSearch = input("Enter the author you are searching for: ")
+# with open("books.csv", mode="r") as books_csv_file:
+#     reader = csv.reader(books_csv_file)
+#     for row in reader:
+#         if authorSearch.capitalize() in str(row):
+#             print(row)
 
-authorSearch = input("Enter the author you are searching for: ")
+# Challenge 114
+startYear = input("Enter the start year: ")
+endYear = input("Enter the end year: ")
 with open("books.csv", mode="r") as books_csv_file:
     reader = csv.reader(books_csv_file)
     for row in reader:
-        if authorSearch.capitalize() in str(row):
-            print(row)
-
-
-
+        try:
+            year = int(row[2])
+            print(year)
+        except ValueError:
+            print("Cannot convert to integer")
